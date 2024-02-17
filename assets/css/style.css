@@ -36,4 +36,12 @@ h2 {
     width: 600px;
     /* testing */
     border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.hole {
+    background-color: red;
+    border: 1px solid blue;
 }
