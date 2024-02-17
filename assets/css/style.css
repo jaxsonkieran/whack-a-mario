@@ -45,12 +45,15 @@ h2 {
     grid-template-rows: repeat(3, 1fr);
 }
 
+
 .hole {
     width: 180px;
     height: 180px;
     /* image of pipe from www.pixabay.com */
-    background-image: url("../images/pipe.png");
+    background: url("../images/pipe.png") bottom center no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 /* .hammer {
@@ -66,5 +69,9 @@ h2 {
     /* transform: translate(-10%, -10%); */
 
 .hole .mario {
-    
+    width: 35%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
 }
