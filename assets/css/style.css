@@ -38,6 +38,7 @@ h2 {
     background: url("../images/soil.jpg");
     background-size: cover;
     border: 2px solid #FBD000;
+    border-radius: 10px;
     /* begin creating the grid for the 3x3 holes */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
