@@ -47,13 +47,20 @@ h2 {
 
 
 .hole {
-    width: 180px;
-    height: 180px;
-    /* image of pipe from www.pixabay.com */
-    background: url("../images/pipe.png") bottom center no-repeat;
-    background-size: cover;
-    position: relative;
+    /* evenly proportioned as of https://css-tricks.com */
+    flex: 1 0 33.33%;
     overflow: hidden;
+    position: relative;
+}
+.hole:after{
+    content: '';
+    position: absolute;
+    display: block;
+    background: url("../images/pipe.png") bottom center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
 }
 
 /* .hammer {
@@ -67,11 +74,3 @@ h2 {
     margin: 0;
     padding: 0;
     /* transform: translate(-10%, -10%); */
-
-.hole .mario {
-    width: 35%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
-}
