@@ -47,42 +47,10 @@ h2 {
 
 
 .hole {
-    /* evenly proportioned as of https://css-tricks.com */
-    flex: 1 0 33.33%;
-    /* hides marios */
-    overflow: hidden;
-    position: relative;
-}
-
-/* make the hole/pipe div responsive and perfectly square */
-.hole:after{
-    content: '';
-    position: absolute;
-    display: block;
-    background: url("../images/pipe.png") bottom center no-repeat;
-    background-size: 180px;
-    width: 100%;
-    height: 80%;
-    bottom: 0;
-    /* stack order so the pipes are going to show above the marios this time */
-    z-index: 2;
-}
-
-.mario {
-    background: url("../images/mario-49289.png") bottom center no-repeat;
-    /* absolute used so as not to affect hole size */
-    position: absolute;
-    background-size: 40%;
-    /* this moves the mario under the pipe div and with js we will reset it to 0 */
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    bottom: 10px;
-}
-
-/* setting to 0 to have the mario peek up with js */
-.hole.up .mario {
-    top: 0;
+    width: 180px;
+    height: 180px;
+    background-image: url("../images/pipe.png");
+    background-size: cover;
 }
 
 
