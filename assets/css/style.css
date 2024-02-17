@@ -80,6 +80,11 @@ h2 {
     bottom: 10px;
 }
 
+/* setting to 0 to have the mario peek up with js */
+.hole.up .mario {
+    top: 0;
+}
+
 
 
 /* .hammer {
