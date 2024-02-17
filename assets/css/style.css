@@ -52,11 +52,20 @@ h2 {
     height: 180px;
     background-image: url("../images/pipe.png");
     background-size: cover;
+    position: relative;
 }
 
-.mario {
-    
+.hole .mario {
+    width: 60px;
+    height: 90px;
+    position: absolute;
+    /* needed to center the mario after position aboslute was used */
+    left: 50%;
+    margin-left: -20%;
+    bottom: 80px;
+    animation: rise .3s ease-out;
 }
+
 
 
 
