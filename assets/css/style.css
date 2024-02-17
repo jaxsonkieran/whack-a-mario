@@ -60,9 +60,10 @@ h2 {
     position: absolute;
     display: block;
     background: url("../images/pipe.png") bottom center no-repeat;
-    background-size: contain;
+    background-size: 180px;
     width: 100%;
     height: 80%;
+    bottom: 0;
     /* stack order so the pipes are going to show above the marios this time */
     z-index: 2;
 }
@@ -75,7 +76,7 @@ h2 {
     /* top: 100%; */
     width: 100%;
     height: 100%;
-    bottom: 25px;
+    bottom: 10px;
 }
 
 
