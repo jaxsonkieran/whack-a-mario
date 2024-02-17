@@ -7,6 +7,11 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const marios = document.querySelectorAll('mario');
+
+
+let score = 0;
+
+
 /**
  * function to get random holes/pipes for the mario to appear in
  */
@@ -30,7 +35,15 @@ randomHole();
  * amount of time between marios coming up
  */
 
-// help from javascript30 coding challenge
+// help from (ref:javascript30 coding challenge)
 function randomTimePeek (min, max){
     return Math.round(Math.random() * (max - min) + min);
-}
+};
+
+//(reference W3schools) function myFunction() {document.getElementById("myDIV").classList.add("mystyle");}
+//for moles function peek() {document.getElementByClassName(.hole.up .mole).classList.add("up")}
+
+
+/**
+ * function to get the marios to pop up out of the pipes
+ */
