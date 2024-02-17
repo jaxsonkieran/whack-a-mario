@@ -49,9 +49,12 @@ h2 {
 .hole {
     /* evenly proportioned as of https://css-tricks.com */
     flex: 1 0 33.33%;
+    /* hides marios */
     overflow: hidden;
     position: relative;
 }
+
+/* make the hole/pipe div responsive and perfectly square */
 .hole:after{
     content: '';
     position: absolute;
@@ -60,8 +63,21 @@ h2 {
     background-size: contain;
     width: 100%;
     height: 80%;
+    /* stack order so the pipes are going to show above the marios this time */
     z-index: 2;
 }
+
+.mario {
+    background: url("../images/mario-49289.png") bottom center no-repeat;
+    /* absolute used so as not to affect hole size */
+    position: absolute;
+    background-size: 50%;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* .hammer {
     height: 150px;
