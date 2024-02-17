@@ -34,14 +34,17 @@ h2 {
 .game-container {
     height: 600px;
     width: 600px;
-    /* testing */
-    border: 1px solid red;
+    /* begin creating the grid for the 3x3 holes */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    /* add space between each of the holes */
+    gap: 60px;
 }
 
 .hole {
+    /* testing */
     background-color: red;
+    /* testing */
     border: 1px solid blue;
 }
