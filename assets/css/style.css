@@ -5,3 +5,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Electrolize", sans-serif;
+    text-align: center;
+}
