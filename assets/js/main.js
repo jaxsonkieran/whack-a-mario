@@ -11,15 +11,16 @@
 
 
 // Code with help of freecodecamp - https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/
-const cursorHammer = document.querySelector('.hammer');
+// const cursorHammer = document.querySelector('.hammer');
 
-
-const moveCursor = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
+// window.addEventListener('mousemove', e => {
+//   cursorHammer.style.top = e.pageY + 'px'
+//   cursorHammer.style.left = e.pageX + 'px'
+// })
+// const moveCursor = (e)=> {
+//   const mouseY = e.clientY;
+//   const mouseX = e.clientX;
    
-  cursorHammer.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+//   cursorHammer.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
    
-}
-
-window.addEventListener('mousemove', moveCursor);
+// }
