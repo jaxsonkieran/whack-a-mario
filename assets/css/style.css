@@ -9,4 +9,9 @@
 body {
     font-family: "Electrolize", sans-serif;
     text-align: center;
+    background: url("../images/mario-background.jpg");
+    background-size: cover no-repeat;
+    min-height: 100vh;
+    /* incase image fails to load */
+    background-color: red;
 }
