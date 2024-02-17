@@ -53,12 +53,12 @@ h2 {
     background-size: cover;
 }
 
-.hammer {
-    height: 180px;
-    width: 180px;
+/* .hammer {
+    height: 100px;
+    width: 100px;
     position: absolute;
     top: 100px;
     left: 100px;
     background-image: url("../images/hammer.png");
     background-size: 100%;
-}
+} */
