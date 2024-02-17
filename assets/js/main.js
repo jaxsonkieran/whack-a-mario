@@ -5,11 +5,11 @@
 
 // Declare game variables
 const holes = document.querySelectorAll('.hole');
-
+const scoreBoard = document.querySelector('.score');
+const marios = document.querySelectorAll('mario');
 /**
  * function to get random holes/pipes for the mario to appear in
  */
-
 
 function randomHole () {
     // remove the mario class if it's on any of the pipes so we get a fresh hole each time
@@ -18,8 +18,19 @@ function randomHole () {
     })
 // get a random number from 0 - 8, (1-9), start counting from 0
     let randomHole = holes[Math.floor(Math.random() * 9)];
-    console.log(randomHole);
-    // randomHole.classList.add('mario');
+    randomHole.classList.add('mario');
 }
 
 randomHole();
+
+// Above was tested in console and random div was generated each time in the console
+
+/**
+ * fucntion randomTimePeek to get a random
+ * amount of time between marios coming up
+ */
+
+// help from javascript30 coding challenge
+function randomTimePeek (min, max){
+    return Math.round(Math.random() * (max - min) + min);
+}
