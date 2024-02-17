@@ -2,5 +2,9 @@
 //  create function that holds the score
 // create function that produces the mario in a random hole
 
-const cursor = document.querySelector('#mario-hammer');
+const cursor = document.querySelector('.hammer');
 
+window.addEventListener('mousemove', e => {
+    cursor.style.top = e.pageY + 'px'
+    cursor.style.left = e.pageX + 'px'
+});
