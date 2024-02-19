@@ -56,14 +56,19 @@ h2 {
 
 }
 
-.hole .mario {
+/* .hole .mario {
     width: 100px;
     height: 100px;
     position: absolute;
     /* needed to center the mario after position aboslute was used */
-    left: 50%;
+    /* left: 50%;
     margin-left: -20%;
     bottom: 80px;
+} */
+
+.mario {
+    background: url("../images/mario-49289.png") bottom no-repeat;
+    background-size: 50%;
 }
 
 
