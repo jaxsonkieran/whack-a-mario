@@ -32,4 +32,9 @@ function randomHole () {
 randomHole();
 
 
+// Now I need a function that will record the hit or 'mousedown' on the mario each time it appears
+/**
+ * function that will record a hit on mousedown and add a point for every hit to the scoreboard
+ */
+
 
