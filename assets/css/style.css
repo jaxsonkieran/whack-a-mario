@@ -71,6 +71,17 @@ h2 {
     background-size: 50%;
 }
 
+.game-controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#intructions {
+    color: #fff;
+    background-color: #049CD8;
+    border-radius: 8px;
+}
+
 
 
 
