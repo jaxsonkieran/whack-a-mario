@@ -50,14 +50,12 @@ h2 {
     /* evenly fit into the 540x540 container */
     width: 180px;
     height: 180px;
-    background-image: url("../images/pipe.png");
-    background-size: cover;
     position: relative;
 }
 
 .hole .mario {
-    width: 60px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     /* needed to center the mario after position aboslute was used */
     left: 50%;
