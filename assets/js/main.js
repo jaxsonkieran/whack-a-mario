@@ -12,7 +12,6 @@ const marios = document.querySelectorAll('mario');
 
 let result = 0;
 let hitTheMario;
-let timerId = false;
 let currentTime = 60;
 
 
@@ -31,6 +30,17 @@ function randomHole () {
 
     hitTheMario = randomHole.id
 }
+
+/**
+ * Function to get the mario to move at a set interval
+ */
+
+function moveMario (){
+    let timerId = null
+    timerId = setInterval(randomHole, 500)
+}
+
+moveMario();
 
 // randomHole();
 
