@@ -6,6 +6,7 @@
 // Declare game variables
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
+const timeLeft = document.querySelector('.time-left');
 const marios = document.querySelectorAll('mario');
 
 
