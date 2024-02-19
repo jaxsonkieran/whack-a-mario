@@ -16,11 +16,11 @@ let currentTime = 60;
 
 
 /**
- * function to get random holes/pipes for the mario to appear in
+ * function to get random holes for the mario to appear in
  */
 
 function randomHole () {
-    // remove the mario class if it's on any of the pipes so we get a fresh hole each time
+    // remove the mario class if it's on any of the squares so we get a fresh square each time
     holes.forEach(hole => {
         hole.classList.remove('mario');
     })
@@ -30,9 +30,6 @@ function randomHole () {
 }
 
 randomHole();
-
-// Above was tested in console and random div was generated each time in the console
-
 
 
 
