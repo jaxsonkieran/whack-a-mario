@@ -10,8 +10,9 @@ const timeLeft = document.querySelector('.time-left');
 const marios = document.querySelectorAll('mario');
 
 
-let score = 0;
+let result = 0;
 let timerId = false;
+let currentTime = 60;
 
 
 /**
