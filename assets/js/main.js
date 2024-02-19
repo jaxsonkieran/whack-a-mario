@@ -5,8 +5,8 @@
 
 // Declare game variables
 const holes = document.querySelectorAll('.hole');
-const scoreBoard = document.querySelector('.score');
-const timeLeft = document.querySelector('.time-left');
+const score = document.querySelector('#score');
+const timeLeft = document.querySelector('#time-left');
 const marios = document.querySelectorAll('mario');
 
 
@@ -28,6 +28,8 @@ function randomHole () {
 // get a random number from 0 - 8, (1-9), start counting from 0
     let randomHole = holes[Math.floor(Math.random() * 9)];
     randomHole.classList.add('mario');
+
+    hitTheMario = randomHole.id
 }
 
 // randomHole();
@@ -37,15 +39,5 @@ function randomHole () {
 /**
  * function that will record a hit on mousedown and add a point for every hit to the scoreboard
  */
-
-holes.forEach(hole => {
-    hole.addEventListener('mousedown', () => {
-        if (hole.id === hitTheMario){
-            result++
-            scoreBoard.textContent = result
-            hitTheMario = null
-        }
-    })
-})
 
 
