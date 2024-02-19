@@ -11,6 +11,7 @@ const marios = document.querySelectorAll('mario');
 
 
 let result = 0;
+let hitTheMario;
 let timerId = false;
 let currentTime = 60;
 
@@ -29,12 +30,22 @@ function randomHole () {
     randomHole.classList.add('mario');
 }
 
-randomHole();
+// randomHole();
 
 
 // Now I need a function that will record the hit or 'mousedown' on the mario each time it appears
 /**
  * function that will record a hit on mousedown and add a point for every hit to the scoreboard
  */
+
+holes.forEach(hole => {
+    hole.addEventListener('mousedown', () => {
+        if (hole.id === hitTheMario){
+            result++
+            scoreBoard.textContent = result
+            hitTheMario = null
+        }
+    })
+})
 
 
