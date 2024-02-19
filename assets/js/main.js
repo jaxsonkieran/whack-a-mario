@@ -7,7 +7,7 @@
 const holes = document.querySelectorAll('.hole');
 const score = document.querySelector('#score');
 const timeLeft = document.querySelector('#time-left');
-const marios = document.querySelectorAll('mario');
+const mario = document.querySelectorAll('.mario');
 
 
 let result = 0;
@@ -27,17 +27,15 @@ function randomHole () {
 // get a random number from 0 - 8, (1-9), start counting from 0
     let randomHole = holes[Math.floor(Math.random() * 9)];
     randomHole.classList.add('mario');
-
-    hitTheMario = randomHole.id
 }
 
 /**
  * Function to get the mario to move at a set interval
  */
 
-function moveMario (){
+function moveMario () {
     let timerId = null
-    timerId = setInterval(randomHole, 500)
+    timerId = setInterval(randomHole, 500);
 }
 
 moveMario();
