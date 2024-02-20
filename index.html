@@ -17,30 +17,31 @@
     <h1>Whack-A-Mario</h1>
 
     <div class="game-info-container">
-    
-    <div class="game-controls">
-        <button id="instructions" type="button" aria-label="click to read game instructions">
-            About Game
+
+        <section class="game-controls">
+            <button id="instructions" type="button" aria-label="click to read game instructions">
+                About Game
+            </button>
+            <!-- ref W3 Schools for modal -->
+            <div id="gameinfomodal" class="modal">
+                <!-- modal content -->
+                <div class="box-content">
+                    <span class="close">&times;</span>
+                    <h2>How To Play</h2>
+                    <ul>
+                        <li>On Desktop, use your mouse to click on the marios.</li>
+                        <li>On mobile, tap to hit the marios</li>
+                        <li>For every hit of the mario you will score one point!</li>
+                        <li>The game is over when your time hits 0|</li>
+                    </ul>|
+                </div>
+            </div>
+        </section>
+        <!-- play game button -->
+        <button type="button" id="playButton" aria-label="play the game">
+            <span id="playButton-text">Play Game</span>
         </button>
-        <!-- ref W3 Schools for modal -->
-        <div id="infoModalBox" class="modalInfoBox">
-            <div class="box-content">
-                <span class="close">&times;</span>
-                <h2>How To Play</h2>
-                <ul>
-                    <li>On Desktop, use your mouse to click on the marios.</li>
-                    <li>On mobile, tap to hit the marios</li>
-                    <li>For every hit of the mario you will score one point!</li>
-                    <li>The game is over when your time hits 0|</li>
-                </ul>
-            </div>
-            </div>
     </div>
-    <!-- play game button -->
-    <button type="button" id="playButton" aria-label="play the game">
-        <span id="playButton-text">Play Game</span>
-    </button>
-</div>
     <h2 id="score">SCORE: <span>0</span></h2>
     <h2 id="time-left">TIME LEFT: <span>60</span></h2>
     <div class="game-container">
@@ -50,7 +51,7 @@
 
         </div>
         <div class="hole" id="3">
- 
+
         </div>
         <div class="hole" id="4">
 
@@ -65,10 +66,10 @@
 
         </div>
         <div class="hole" id="8">
-   
+
         </div>
         <div class="hole" id="9">
-  
+
         </div>
     </div>
 
