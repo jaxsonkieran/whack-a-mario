@@ -45,6 +45,30 @@ h2 {
     border-radius: 3px;
 }
 
+#about-btn:hover,
+#playButton:hover {
+    background-color: #FBD000;
+    color: #049CD8;
+}
+
+/* the game modal box  ref (W3Schools Modal)*/
+.modal {
+    /* hidden by default, to open with js */
+    display: none;
+    position: fixed;
+    /* sit on top of everything */
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* enable scroll if neccessary */
+    overflow: auto;
+    /* black with opacity */
+    background-color: rgba(0,0,0,0.4);
+}
+
 
 .game-container {
     height: 540px;
