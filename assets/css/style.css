@@ -31,6 +31,21 @@ h2 {
     margin-bottom: 1em;
 }
 
+/* game controls, buttons and modal */
+.game-controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about-btn,
+#playButton {
+    padding: 8px;
+    background-color: #049CD8;
+    color: #fff;
+    border-radius: 3px;
+}
+
+
 .game-container {
     height: 540px;
     width: 540px;
@@ -69,17 +84,6 @@ h2 {
 .mario {
     background: url("../images/mario-49289.png") bottom no-repeat;
     background-size: 50%;
-}
-
-.game-controls {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#intructions {
-    color: #fff;
-    background-color: #049CD8;
-    border-radius: 8px;
 }
 
 
